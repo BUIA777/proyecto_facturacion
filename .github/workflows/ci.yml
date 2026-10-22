@@ -1,4 +1,4 @@
-name: Pipeline CI Comercial Chiclayo
+name: Pipeline CI Comercial Chiclayo 
 
 on:
   push:
