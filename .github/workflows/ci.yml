@@ -53,14 +53,3 @@ jobs:
           echo "- Script de auditoría interna ejecutado." >> $GITHUB_STEP_SUMMARY
           echo "- Reporte de auditoría publicado como artefacto." >> $GITHUB_STEP_SUMMARY
 
-      - name: 9. Ejecutar script de mantenimiento
-        env:
-          PYTHONPATH: .
-        run: |
-          python scripts/mantenimiento_sistema.py
-
-      - name: 10. Publicar artefacto de mantenimiento
-        uses: actions/upload-artifact@v4
-        with:
-          name: reporte-mantenimiento-sistema
-          path: reporte_mantenimiento.txt
